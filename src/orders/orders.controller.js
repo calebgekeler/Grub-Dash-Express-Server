@@ -60,7 +60,7 @@ function doDishesExist(req, res, next){
       if(dishesProp[i].quantity===0 || 
         !dishesProp[i].quantity || 
         dishesProp[i].quantity!==Number(dishesProp[i].quantity)){
-          //console.log(`index ${i+1} failed`)
+          //console.log(`index ${i} failed`)
         return next({
           status: 400,
           message: `Dish ${i} must have a quantity that is an integer greater than 0`
